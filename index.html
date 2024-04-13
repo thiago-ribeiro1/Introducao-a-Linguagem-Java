@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta content='Introdução à Linguagem Java' name='description'>
+      <meta name="keywords" content="Java, Linguagem java, programação, aprender programação, aula">
+      <link rel="icon" type="image/x-icon" href="icon/icon-java.ico">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Introdução à Linguagem Java</title>
+   </head>
+
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand"></a>
+            <img src="img/logo_unifacisa.png" alt="logo-unifacisa" width="15%" height="15%"> <!-- Logo Unifacisa -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <!-- Barra de navegação -->
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#inicio">Início <span class="sr-only"></span></a>
+                  </li>
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#carousel-descricao">Descrição <span class="sr-only"></span></a>
+                  </li>
+                  <li class="nav-item active">
+                     <a class="nav-link" href="video.html">Vídeos <span class="sr-only"></span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <!-- Submenu -->
+                     <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                     Tópicos
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#helloworld">Hello World</a>
+                        <a class="dropdown-item" href="#variaveis-tipos">Variáveis</a>
+                        <a class="dropdown-item" href="#scanner">Entrada de Dados</a>
+                        <a class="dropdown-item" href="#condicionais">Condicionais</a>         
+                        <a class="dropdown-item" href="#for-while">Estruturas de Repetição</a>
+                        <a class="dropdown-item" href="#getters-setters">Getters e Setters</a>
+                        <a class="dropdown-item" href="#construtor">Construtor</a>
+                        <a class="dropdown-item" href="#classes-objetos">Classes e Objetos</a>
+                        <a class="dropdown-item" href="#arrays-arraylist">Arrays</a>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+
+      <main>
+         <section class="intro-section" id="inicio">
+            <div class="container">
+               <h1>Introdução à Linguagem Java</h1>
+               <!-- Título -->
+            </div>
+            <div class="imagem-bg">
+               <img class="fs faded" src="img/bg.jpg" alt="background image java" width="100%" height="100%">
+            </div>
+         </section>
+         <div id="carousel-descricao" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption text-left">
+                        <h3 id="titulo-descricao">Aprenda a programar em Java com Orientação a Objetos</h3>
+                        <br>  <!-- Descrição da página -->
+                        <h5 id="texto-descricao">Domine uma das linguagens mais populares para desenvolvimento back-end, e explore o poder da Orientação a Objetos, bem como as principais bibliotecas do mundo Java.</h5>
+                        <div class="developed-by">
+                           <br><br>
+                           <h3>Developed By</h3>
+                           <br><br>
+                        </div>
+                        <div class="row">
+                           <div class="col">
+                              <h5>Diogo Diniz</h5>
+                              <!-- Dev 1 -->
+                              <img src="img/foto_1.png" alt="Diogo Diniz Dev" class="img-fluid"> <!-- Foto 1 --> <!-- class img-fluid deixar imagens responsivas -->
+                           </div>
+                           <div class="col">
+                              <h5>Keven Max</h5>
+                              <!-- Dev 2 -->
+                              <img src="img/foto_2.png" alt="Keven Max Dev" class="img-fluid"> <!-- Foto 2 -->
+                           </div>
+                           <div class="col">
+                              <h5>Thiago Ribeiro</h5>
+                              <!-- Dev 3 -->
+                              <img src="img/foto_3.png" alt="Thiago Ribeiro Dev" class="img-fluid"> <!-- Foto 3 -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Seção Hello World -->
+         <section id="helloworld">
+            <div class="container my-3">
+               <div class="row">
+                  <!-- Texto -->
+                  <div class="col-md-6 text-container">
+                     <div class="my-3 py-3">
+                        <h2 class="display-5">Hello World</h2>
+                        <p class="lead">Saída de Dados (Hello World)</p>
+                        <!-- Áudio -->
+                        <audio controls>
+                           <source src="audio/hello_world.mp3" type="audio/mp3">
+                        </audio>
+                        <p>Podemos usar algumas funções prontas da biblioteca do <span class="azul">Java</span> para imprimirmos algo na tela, ou seja,
+                           passar ao usuário algum texto, dessa forma utilizamos as funções pertencentes à biblioteca <span class="azul">System</span>.
+                           Utilizamos o método para imprimir e pular para a próxima linha.
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Imagem -->
+                  <div class="col-md-6">
+                     <img src="img/hello-world.png" class="img-fluid" alt="Hello World">
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Seção Variáveis -->
+         <section id="variaveis-tipos">
+            <div class="container my-3">
+               <div class="row">
+                  <!-- Texto -->
+                  <div class="col-md-6 text-container">
+                     <div class="my-3 py-3">
+                        <h2 class="display-5">Declaração de variáveis e tipos primitivos</h2>
+                        <p class="lead">Saída de Dados (Hello World)</p>
+                        <!-- Áudio -->
+                        <audio controls>
+                           <source src="audio/declaracao_variavel.mp3" type="audio/mp3">
+                        </audio>
+                        <p>Em Java, uma <span class="azul">variável</span> é um espaço de armazenamento nomeado que pode conter dados que podem ser
+                           modificados durante a execução do programa. As variáveis são fundamentais para armazenar e manipular
+                           informações em um programa.
+                        </p>
+                        <p>Os tipos primitivos mais usados em Java são:</p>
+                        <!-- Flexbox -->
+                        <div class="flex-container">
+                           <div class="flex-item">int</div>
+                           <div class="flex-item">float</div>
+                           <div class="flex-item">double</div>
+                           <div class="flex-item">boolean</div>
+                        </div>
+                        <div class="flex-container">
+                           <div class="flex-item">tipo numérico inteiro</div>
+                           <div class="flex-item">tipo numérico contendo casas decimais</div>
+                           <div class="flex-item">tipo numérico contendo casas decimais</div>
+                           <div class="flex-item">verdadeiro ou falso</div>
+                        </div>
+                        <br>
+                        <p>Também usamos <span class="azul">"String"</span>, que muitas vezes parece ser tratada como tipo primitivo mais é na verdade
+                           uma
+                           classe que encapsula a funcionalidade avançada necessária para manipulação eficiente de texto.
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Imagem -->
+                  <div class="col-md-6">
+                     <img src="img/variaveis-tipos.png" class="img-fluid" alt="Variáveis">
+                  </div>
+               </div>
+               <br>
+               <!-- Título do Vídeo -->
+               <h3 class="texto-video">Tipos de dados primitivos</h3>
+               <br>
+               <!-- Vídeo -->
+               <div class="row video-container">
+                  <div class="col-md-12">
+                     <div class="embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fYXkqpbvvi8?si=3bEOe7P8oLu1dPS0" title="Youtube video" allowfullscreen></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Seção Scanner -->
+         <section id="scanner">
+            <div class="container my-3">
+               <div class="row">
+                  <!-- Título -->
+                  <div class="col-md-6 text-container">
+                     <div class="my-3 py-3">
+                        <h2 class="display-5">Entrada de Dados: Scanner</h2>
+                        <!-- Áudio -->
+                        <audio controls>
+                           <source src="audio/scanner.mp3" type="audio/mp3">
+                        </audio>
+                        <!-- Texto -->
+                        <p>O Scanner, é pertencente ao pacote java.util. A classe "Scanner" simplifica a leitura de diversas
+                           formas de entrada do usuário.
+                        </p>
+                        <p>Seja a partir do teclado, arquivos ou outras fontes, o Scanner oferece uma interface eficiente para
+                           capturar dados.
+                        </p>
+                        <p>É necessário criar um objeto do tipo <span class="azul">Scanner</span> que passa como argumento o objeto System.in dentro do
+                           construtor, e logo após o término da sua utilização deve ser fechado. Veja o exemplo da imagem.
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Imagem -->
+                  <div class="col-md-6">
+                     <img src="img/scanner.png" class="img-fluid" alt="Scanner (Entrada de dados)">
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Seção Condicionais -->
+         <section id="condicionais">
+            <div class="container my-3">
+               <div class="row">
+                  <!-- Título -->
+                  <div class="col-md-6 text-container">
+                     <div class="my-3 py-3">
+                        <h2 class="display-5">Estruturas condicionais <br> (if, else, switch)</h2>
+                        <!-- Áudio -->
+                        <audio controls>
+                           <source src="audio/if_else.mp3" type="audio/mp3">
+                        </audio>
+                        <!-- Texto -->
+                        <p>O if é usado para a execução de um bloco de código se uma determinada condição for verdadeira.
+                           <br>O else permite especificar um bloco de código a ser executado se a condição do if for falsa. <br>
+                           Isso permite que o programa tome decisões com base nas condições.
+                        </p>
+                        <p>Podemos criar um programa que verifica a idade de uma pessoa e retorna uma mensagem dizendo se ela é
+                           maior ou menor de idade. 
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Imagem -->
+                  <div class="col-md-6">
+                     <img src="img/if-else.png" class="img-fluid" alt="If Else Java">
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Switch Case -->
+         <section id="switch-case">
+            <div class="container my-3">
+               <div class="row">
+                  <!-- Título -->
+                  <div class="col-md-6 text-container">
+                     <div class="my-3 py-3">
+                        <h2 class="display-5">Switch</h2>
+                        <!-- Áudio -->
+                        <audio controls>
+                           <source src="audio/switch-case.mp3" type="audio/mp3">
+                        </audio>
+                        <!-- Texto -->
+                        <p>O <span class="azul">switch</span> é utilizado com o objetivo de selecionar alguns dos blocos a serem executados. Trata-se de uma
+                           sequência de declarações, no qual o resultado/valores de uma expressão é comparado com os
+                           resultados/valores de cada situação. <br>
+                           Caso venha acontecer uma correspondência, o bloco de código é executado.
+                        </p>
+                        <p>Dentro de uma estrutura switch existe o <i>(case)</i>, que é usado para executar uma determinada função
+                           escolhida pelo usuário.
+                        </p>
+                        <p>Resumindo o if, else, e switch são comandos essenciais para controlar o fluxo de execução do programa
+                           com base em condições específicas.
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Imagem -->
+                  <div class="col-md-6">
+                     <img src="img/switch-case.png" class="img-fluid" alt="Switch Case Java">
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Seção Estruturas de repetição -->
+         <section id="for-while">
+            <div class="container my-3">
+               <div class="row">
+                  <!-- Título -->
+                  <div class="col-md-6 text-container">
+                     <div class="my-3 py-3">
+                        <h2 class="display-5">Estruturas de repetição</h2>
+                        <!-- Áudio -->
+                        <audio controls>
+                           <source src="audio/for-while.mp3" type="audio/mp3">
+                        </audio>
+                        <!-- Texto -->
+                        <p>Os laços de repetição, incluindo for, while e do-while, são usados para a execução de um bloco de
+                           código de forma repetida com base em alguma condição específica.
+                        </p>
+                        <p>O <span class="azul">for</span> é utilizado quando o número de iterações é conhecido muito antes de realizar o loop, ele é dividido
+                           em
+                           três partes: <br> inicialização, condição de continuação e expressão de incremento/decremento. O <span class="azul">while</span>
+                           executa um bloco de código enquanto uma condição for verdadeira. 
+                        </p>
+                        <p>Veja no exemplo do vídeo abaixo:</p>
+                     </div>
+                  </div>
+                  <!-- Imagem -->
+                  <div class="col-md-6">
+                     <img src="img/for-while.png" class="img-fluid" alt="For e While Java">
+                  </div>
+               </div>
+               <!-- Vídeo -->
+               <div class="row video-container">
+                  <div class="col-md-12">
+                     <div class="embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9xTqj779eP0?si=jn9SCYaheadsQt2g" title="Youtube video" allowfullscreen></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         
+         <!-- Seção Getters and Setters -->
+         <section id="getters-setters">
+            <div class="container my-3">
+               <div class="row">
+                  <!-- Título -->
+                  <div class="col-md-6 text-container">
+                     <div class="my-3 py-3">
+                        <h2 class="display-5">Getters and Setters</h2>
+                        <!-- Áudio -->
+                        <audio controls>
+                           <source src="audio/guetters-setters.mp3" type="audio/mp3">
+                        </audio>
+                        <!-- Texto -->
+                        <p>Os métodos getters e setters são usados para acessar e modificar os atributos (variáveis de instância) de
+                           uma classe de maneira controlada.
+                        </p>
+                        <p>Os métodos <strong>getters</strong> são usados para obter o valor de um atributo de uma classe. Já os métodos <strong>setters</strong><br>
+                           são usados para definir o valor de um atributo de uma classe.
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Imagem -->
+                  <div class="col-md-6">
+                     <img src="img/getters-setters.png" class="img-fluid" alt="Getters and Setters Java">
+                  </div>
+               </div>
+               <!-- Vídeo -->
+               <div class="row video-container">
+                  <div class="col-md-12">
+                     <div class="embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_5iyl5lcoJY?si=bEATuwa3YRnC5-X7" title="Youtube video" allowfullscreen></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Seção Construtor -->
+         <section id="construtor">
+            <div class="container my-3">
+               <div class="row">
+                  <!-- Título -->
+                  <div class="col-md-6 text-container">
+                     <div class="my-3 py-3">
+                        <h2 class="display-5">Construtor</h2>
+                        <!-- Áudio -->
+                        <audio controls>
+                           <source src="audio/construtor.mp3" type="audio/mp3">
+                        </audio>
+                        <!-- Texto -->
+                        <p>Métodos construtores são métodos executados automaticamente toda vez que uma instância da classe é
+                           criada.
+                           <br>O construtor é normalmente utilizado para fornecer valores iniciais para variáveis de instâncias
+                           definidas pela classe, quando instanciada no método <span class="azul">Main</span> essa classe deve receber nos parâmetros os valores que estão
+                           nos construtores.
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Imagem -->
+                  <div class="col-md-6">
+                     <img src="img/construtor.png" class="img-fluid" alt="Construtor Java">
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Seção Classes e Objetos -->
+         <section id="classes-objetos">
+            <div class="container my-3">
+               <div class="row">
+                  <!-- Título -->
+                  <div class="col-md-6 text-container">
+                     <div class="my-3 py-3">
+                        <h2 class="display-5">Classes Objetos e Métodos</h2>
+                        <!-- Áudio -->
+                        <audio controls>
+                           <source src="audio/classes.mp3" type="audio/mp3">
+                        </audio>
+                        <!-- Texto -->
+                        <p>Uma classe é a estrutura fundamental que define um tipo de objeto. Ela é um modelo para criar objetos.
+                           Uma classe <br>
+                           geralmente contém atributos (variáveis de instância) e métodos
+                           (funções) que operam<br>
+                           sobre esses atributos.
+                        </p>
+                        <p>
+                           Veja na imagem ao lado
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Imagem -->
+                  <div class="col-md-6">
+                     <img src="img/classes.png" class="img-fluid" alt="Classes Java">
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Classes e Objetos 2 -->
+         <section id="classes-objetos">
+            <div class="container my-3">
+               <div class="row">
+                  <!-- Título -->
+                  <div class="col-md-6 text-container">
+                     <div class="my-3 py-3">
+                        <h2 class="display-5">Objetos</h2>
+                        <!-- Áudio -->
+                        <audio controls>
+                           <source src="audio/objetos.mp3" type="audio/mp3">
+                        </audio>
+                        <!-- Texto -->
+                        <p>Um objeto, por outro lado, é uma instância específica de uma classe. Usamos a palavra-chave <b>new</b>
+                           para
+                           criar objetos.
+                           Veja este exemplo onde criamos um objeto para esta classe, e damos valores aos seus atributos:
+                        </p>
+                        <p>
+                           Veja na imagem ao lado
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Imagem -->
+                  <div class="col-md-6">
+                     <img src="img/objeto.png" class="img-fluid" alt="Objeto Java">
+                  </div>
+               </div>
+               <!-- Vídeo -->
+               <div class="row video-container">
+                  <div class="col-md-12">
+                     <div class="embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ohmHbdUhAGc?si=I14tL22MI13a4VHo"
+                           title="Youtube video" allowfullscreen></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Seção Arrays -->
+         <section id="arrays-arraylist">
+            <div class="container my-3">
+               <div class="row">
+                  <!-- Título -->
+                  <div class="col-md-6 text-container">
+                     <div class="my-3 py-3">
+                        <h2 class="display-5">Arrays</h2>
+                        <!-- Áudio -->
+                        <audio controls>
+                           <source src="audio/arrays.mp3" type="audio/mp3">
+                        </audio>
+                        <!-- Texto -->
+                        <p>Um Array geralmente é formado para exibir uma lista de elementos do mesmo tipo. Eles tem tamanho fixo.
+                           <br>Arrays podem ser de tipos primitivos ou de instâncias de uma classe.
+                        </p>
+                        <p> Veja abaixo como deve ser feita a inicialização de um array do tipo int com 5 itens:</p>
+                        <p><span class="azul">int[] num = new int[5];</span></p>
+                     </div>
+                  </div>
+                  <!-- Imagem -->
+                  <div class="col-md-6">
+                     <img src="img/arrays.png" class="img-fluid" alt="Arrays Java">
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- ArrayList -->
+         <section id="arrays-arraylist">
+            <div class="container my-3">
+               <div class="row">
+                  <!-- Título -->
+                  <div class="col-md-6 text-container">
+                     <div class="my-3 py-3">
+                        <h2 class="display-5">ArrayList</h2>
+                        <!-- Áudio -->
+                        <audio controls>
+                           <source src="audio/arraylist.mp3" type="audio/mp3">
+                        </audio>
+                        <!-- Texto -->
+                        <p>ArrayList é uma classe pertencente ao pacote java.util que implementa a interface List. Ele fornece uma
+                           estrutura de dados dinâmica que pode armazenar elementos de qualquer tipo, como objetos de uma classe ou tipos
+                           primitivos.
+                        </p>
+                        <p> Diferentemente de Arrays, o "ArrayList" é dinâmico, ou seja, o seu tamanho pode ser alterado durante a
+                           execução do código.<br>
+                           Isso é interessante você pode não saber quantos elementos irá armazenar antecipadamente.
+                        </p>
+                        <p>O ArrayList oferece métodos próprios para funções como:</p>
+                        <!-- Grid -->
+                        <div class="grid-container">
+                           <div class="grid-item">Adicionar elementos <b>(.add)</b></div>
+                           <div class="grid-item">Remover <b>(.remove)</b></div>
+                           <div class="grid-item">Acessar elementos <b>(.get)</b></div>
+                           <div class="grid-item">Verificar existência <b>(.contains)</b></div>
+                           <div class="grid-item">Obter índice <b>(.indexOf)</b></div>
+                           <div class="grid-item">Verificar tamanho <b>(.size)</b></div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Imagem -->
+                  <div class="col-md-6">
+                     <img src="img/arraylist.png" class="img-fluid" alt="ArrayList Java">
+                  </div>
+               </div>
+               <!-- Vídeo -->
+               <div class="row video-container">
+                  <div class="col-md-12">
+                     <div class="embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/c0nEVgU7G_w?si=vBCkE4d4bQefcVFp"
+                           title="Youtube video" allowfullscreen></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Footer -->
+         <footer class="bg-dark text-white text-center py-4">
+            <div class="container">
+               <div class="row">
+                  <!-- Logomarca -->
+                  <div class="col-md-6 text-left">
+                     <img src="img/logo_unifacisa.png" alt="Logomarca" class="img-fluid">
+                  </div>
+                  <!-- Grupo -->
+                  <div class="col-md-6">
+                     <h5>Programar Web Front-End</h5>
+                     <br>
+                     <h6>Grupo:</h6>
+                     <h6>Diogo Diniz Spínola Ribeiro | Keven Max Bezerra de Sousa | Thiago Ribeiro Ramos
+                        Silva
+                     </h6>
+                     <br>
+                  </div>
+               </div>
+            </div>
+            <div class="social-icons">
+               <!-- Ícones Git e Linkedin -->
+               <a href="https://github.com/spinola109" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+               <p>@spinola109</p>
+               <a href="https://www.linkedin.com/in/diogo-sp%C3%ADnola-051295291" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            </div>
+            <div class="social-icons">
+               <!-- Ícones Git e Linkedin -->
+               <a href="https://github.com/Mkevenmax" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+               <p>@Mkevenmax</p>
+               <a href="https://www.linkedin.com/in/keven-max-050501284" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            </div>
+            <div class="social-icons">
+               <!-- Ícones Git e Linkedin -->
+               <a href="https://github.com/thiago-ribeiro1" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+               <p>@thiago-ribeiro1</p>
+               <a href="https://www.linkedin.com/in/thiago-ribeiro-ramos" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            </div>
+         </footer>
+
+         <!-- Uso do JS no Submenu dropdown-->
+         <script src="js/bootstrap.bundle.min.js"></script>
+         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      </body>
+      </html>
