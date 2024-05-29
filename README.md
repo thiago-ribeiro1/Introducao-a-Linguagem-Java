@@ -10,8 +10,6 @@ Introdução à Linguagem Java - Projeto Desenvolvido para a Competência (Progr
 <div style="display: inline_block"><br/>
  <img align="center" alt="css" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/>	
 </div>
-<div style="display: inline_block"><br/>
- <img align="center" alt="php" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>	
-</div><br><br>
+<br><br>
 
 ![learning-java](https://github.com/thiago-ribeiro1/Introducao-a-Linguagem-Java/assets/127905420/244106c3-a824-48cd-a95a-bde1f6e0fdb3)
