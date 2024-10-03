@@ -2,7 +2,6 @@
 
 Introdução à Linguagem Java - Projeto Desenvolvido para a Competência (Programar Web Front End) na Unifacisa
 
-[Introdução à Linguagem Java](https://learning-java.netlify.app)
 
 <div style="display: inline_block"><br/>
  <img align="center" alt="html" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>	
